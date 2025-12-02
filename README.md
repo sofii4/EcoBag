@@ -25,19 +25,6 @@ O sistema gerencia todo o ciclo de incentivo ao descarte correto:
     * ❌ **Reprovado:** Se houver mistura de lixo orgânico/incorreto, a validação é negada.
 5.  **Recompensa:** O usuário troca seus pontos acumulados por bonificações, descontos ou brindes oferecidos por empresas parceiras cadastradas na plataforma.
 
-```mermaid
-graph TD
-    A[👤 Usuário] -->|1. Solicita| B(🏷️ Etiqueta QR Code)
-    B -->|2. Cola na Sacola| C{🗑️ Descarte}
-    C -->|3. Registra no App| D[📱 Sistema EcoBag]
-    E[🚛 Catador] -->|4. Recebe Sacola| C
-    E -->|5. Scaneia/Valida| D
-    D -->|6. Validação OK?| F{Verificação}
-    F -->|Sim| G[💰 Pontos Creditados]
-    F -->|Não| H[❌ Feedback Educativo]
-    G -->|Troca| I[🎁 Prêmios]
-```
-
 ##  Funcionalidades
 
 ### Para o Usuário (Descartador)
