@@ -1,12 +1,19 @@
-# 🌱 EcoBag
+# ♻️ EcoBag
 
 > **Conectando comunidade e catadores por um futuro mais sustentável.**
 
-O **EcoBag** é um projeto de Conclusão de Curso do IFSC Xanxerê desenvolvido para solucionar um problema real da nossa comunidade local: a falta de incentivo na separação correta do lixo reciclável.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-5.1-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-4-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+
+O **EcoBag** é um projeto de Conclusão de Curso Técnico em Informática Integrado ao Ensino Médio do IFSC Xanxerê. Foi desenvolvido para solucionar um problema real da nossa comunidade local: a falta de incentivo na separação correta do lixo reciclável.
 
 Através da gamificação, criamos um ecossistema onde o descarte consciente gera valor, conectando diretamente o **cidadão descartador** e o **catador**, com o apoio de **empresas parceiras**.
 
-## 💡 Como Funciona o Fluxo
+## 🌱 Fluxo do Sistema
 
 O sistema gerencia todo o ciclo de incentivo ao descarte correto:
 
@@ -18,7 +25,20 @@ O sistema gerencia todo o ciclo de incentivo ao descarte correto:
     * ❌ **Reprovado:** Se houver mistura de lixo orgânico/incorreto, a validação é negada.
 5.  **Recompensa:** O usuário troca seus pontos acumulados por bonificações, descontos ou brindes oferecidos por empresas parceiras cadastradas na plataforma.
 
-## 🚀 Funcionalidades
+```mermaid
+graph TD
+    A[👤 Usuário] -->|1. Solicita| B(🏷️ Etiqueta QR Code)
+    B -->|2. Cola na Sacola| C{🗑️ Descarte}
+    C -->|3. Registra no App| D[📱 Sistema EcoBag]
+    E[🚛 Catador] -->|4. Recebe Sacola| C
+    E -->|5. Scaneia/Valida| D
+    D -->|6. Validação OK?| F{Verificação}
+    F -->|Sim| G[💰 Pontos Creditados]
+    F -->|Não| H[❌ Feedback Educativo]
+    G -->|Troca| I[🎁 Prêmios]
+```
+
+##  Funcionalidades
 
 ### Para o Usuário (Descartador)
 - Cadastro e autenticação segura.
@@ -32,7 +52,7 @@ O sistema gerencia todo o ciclo de incentivo ao descarte correto:
 - Painel de controle de solicitações de descarte.
 - Ferramenta de validação de sacolas (Aprovar/Reprovar).
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Backend:** Python 3 + Django 5.1
 - **Frontend:** Bootstrap 4, HTML5, CSS3.
@@ -43,9 +63,17 @@ O sistema gerencia todo o ciclo de incentivo ao descarte correto:
 - **Variáveis de Ambiente:** Python-Decouple
 
 
-## ⚙️ Como Executar o Projeto Localmente (continuação)
+## Executando o Projeto Localmente
 
 Siga os passos abaixo para rodar o projeto na sua máquina:
+
+### 1. Clone o repositório
+```bash
+git clone https://github.com/sofii4/ecobag.git
+
+cd ecobag
+```
+
 
 ### 2. Crie e ative o ambiente virtual
 
@@ -110,7 +138,7 @@ python manage.py runserver
 
 O projeto estará acessível em: http://127.0.0.1:8000/
 
-🗄️ Nota sobre o Banco de Dados (MySQL vs SQLite)
+## 📌 Nota sobre o Banco de Dados (MySQL | SQLite)
 
 - Padrão (Desenvolvimento): o projeto usa SQLite por padrão para facilitar testes rápidos.
 - Produção (MySQL): para usar MySQL, tenha o servidor MySQL em execução e configure as variáveis de ambiente listadas acima. Instale também o conector necessário (ex.: `mysqlclient`).
@@ -130,9 +158,17 @@ DATABASES = {
 }
 ```
 
-## 🤝 Agradecimentos
+## 📚 Documentação Acadêmica
+
+Este projeto é o resultado prático de uma pesquisa aprofundada sobre sustentabilidade e realidade local.
+
+Você pode conferir a pesquisa completa, contendo a fundamentação teórica, diagramas UML e a metodologia aplicada, clicando no link abaixo:
+
+📄 **[Trabalho de Conclusão de Curso Completo (PDF)](docs/Trabalho_Integrador_EcoBag.pdf)**
+
+## Agradecimentos
 
 Este projeto foi desenvolvido com foco no impacto social e ambiental, promovendo a reciclagem e apoio aos catadores.
 
 Desenvolvido com carinho,  
-Equipe EcoBag 
+Equipe EcoBag 💚♻️
