@@ -2,20 +2,20 @@
 
 > **Conectando comunidade e catadores por um futuro mais sustentável.**
 
-O **EcoBag** é um projeto de Conclusão de Curso do IFSC Xanxerê desenvolvido para solucionar um problema real da nossa comunidade local: a falta de incentivo e rastreabilidade na separação correta do lixo reciclável.
+O **EcoBag** é um projeto de Conclusão de Curso do IFSC Xanxerê desenvolvido para solucionar um problema real da nossa comunidade local: a falta de incentivo na separação correta do lixo reciclável.
 
-Através da gamificação, criamos um ecossistema onde o descarte consciente gera valor, conectando diretamente o **cidadão descartador** e o **catador/cooperativa**, com o apoio de **empresas parceiras**.
+Através da gamificação, criamos um ecossistema onde o descarte consciente gera valor, conectando diretamente o **cidadão descartador** e o **catador**, com o apoio de **empresas parceiras**.
 
 ## 💡 Como Funciona o Fluxo
 
 O sistema gerencia todo o ciclo de incentivo ao descarte correto:
 
-1.  **Solicitação de Etiquetas:** O usuário comum se cadastra e solicita etiquetas identificadoras (QR Code ou ID único vinculado ao seu perfil).
+1.  **Solicitação de Etiquetas:** O usuário comum se cadastra e solicita etiquetas identificadoras (ID único vinculado ao seu perfil).
 2.  **Descarte Identificado:** O usuário separa seu lixo reciclável, cola sua etiqueta na sacola e registra a **Solicitação de Descarte** no sistema.
 3.  **Coleta e Validação:** O catador recebe a sacola, verifica a etiqueta no sistema e avalia o conteúdo.
 4.  **Bonificação:**
     * ✅ **Aprovado:** Se a separação estiver correta, o catador valida no sistema e o usuário ganha pontos automaticamente.
-    * ❌ **Reprovado:** Se houver mistura de lixo orgânico/incorreto, a validação é negada (feedback educativo).
+    * ❌ **Reprovado:** Se houver mistura de lixo orgânico/incorreto, a validação é negada.
 5.  **Recompensa:** O usuário troca seus pontos acumulados por bonificações, descontos ou brindes oferecidos por empresas parceiras cadastradas na plataforma.
 
 ## 🚀 Funcionalidades
